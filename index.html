@@ -3,450 +3,444 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./files/icono-favicon.png" type="image/png" />
     <title>oquendodev</title>
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Scroll Layout</title>
-        <link
-          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="./css/styles.css" />
-        <link
-          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-          rel="stylesheet"
-        />
-        <link rel="icon" href="./files/icono-favicon.png" type="image/png" />
-      </head>
-      <body>
-        <div
-          class="h-full lg:h-screen lg:flex"
-          style="background-color: #112a38"
-        >
-          <div
-            class="w-full lg:w-1/3 flex flex-col justify-center pt-10 md:mt-0 px-4"
-          >
-            <!-- <div class="w-full flex justify-center pt-20">
-              <div class="bg-blue-900 rounded-full w-40 h-40 lg:w-64 lg:h-64">
+  </head>
+  <body>
+    <div class="h-full lg:h-screen lg:flex" style="background-color: #112a38">
+      <div
+        class="flex flex-col justify-center w-full px-4 pt-10 lg:w-1/3 md:mt-0"
+      >
+        <!-- <div class="flex justify-center w-full pt-20">
+              <div class="w-40 h-40 bg-blue-900 rounded-full lg:w-64 lg:h-64">
                 <img class="rounded-full" src="./pictures/profile.jpeg" />
               </div>
             </div> -->
-            <div class="flex flex-col justify-evenly items-center h-screen">
-              <div class="flex flex-col justify-between items-center">
-                <h1
-                  class="font-bold pb-2 font bold"
-                  style="color: #e2e2e2; font-size: 3rem"
-                >
-                  Gabriel Oquendo
-                </h1>
-                <p style="color: #e2e2e2; font-size: 40px; padding-bottom: 4px">
-                  Web developer
-                </p>
+        <div class="flex flex-col items-center h-screen justify-evenly">
+          <div class="flex flex-col items-center justify-between">
+            <h1
+              class="pb-2 font-bold font bold text-center"
+              style="color: #e2e2e2; font-size: 3rem"
+            >
+              Gabriel Oquendo
+            </h1>
+            <p
+              class="text-center"
+              style="color: #e2e2e2; font-size: 40px; padding-bottom: 4px"
+            >
+              Web developer
+            </p>
 
-                <p style="color: #76777c; font-size: 20px">
-                  "Diseño Web para Todos: Accesibilidad"
-                </p>
+            <p class="text-center" style="color: #76777c; font-size: 20px">
+              "Diseño Web para Todos: Accesibilidad"
+            </p>
 
-                <div
-                  class="flex flex-col justify-around items-center mt-10 text-xl w-full"
-                  style="color: #76777c"
-                >
-                  <div class="flex flex-col justify-start w-1/2">
-                    <div class="flex mb-2 w-full">
-                      <div
-                        class="w-28 border-b-2 border-white hoverable flex justify-end"
-                      >
-                        <a class="mr-2" href="#aboutme">Sobre Mi</a>
-                      </div>
-                    </div>
-                    <div class="flex mb-2">
-                      <div
-                        class="w-28 border-b-2 border-white hoverable flex justify-end"
-                      >
-                        <a class="mr-2" href="#experience">Experiencia</a>
-                      </div>
-                    </div>
-                    <div class="flex mb-2">
-                      <div
-                        class="w-28 border-b-2 border-white border-white hoverable flex justify-end"
-                      >
-                        <a class="mr-2" href="#proyects">Proyectos</a>
-                      </div>
-                    </div>
-                    <div class="flex mb-2">
-                      <div
-                        class="w-28 border-b-2 border-white border-white hoverable flex justify-end"
-                      >
-                        <a class="mr-2" href="#skills">Habilidades</a>
-                      </div>
-                    </div>
-                    <div class="flex mb-2">
-                      <div
-                        class="w-28 border-b-2 border-white border-white hoverable flex justify-end"
-                      >
-                        <a class="mr-2" href="#iue">Universidad</a>
-                      </div>
-                    </div>
-                    <div class="flex">
-                      <div
-                        class="w-28 border-b-2 border-white border-white hoverable flex justify-end"
-                      >
-                        <a class="mr-2" href="#curriculum">Curriculo</a>
-                      </div>
-                    </div>
+            <div
+              class="flex flex-col items-center justify-around w-full mt-10 text-xl"
+              style="color: #76777c"
+            >
+              <div class="w-1/2 flex flex-col items-start">
+                <div class="flex mb-4 ml-8">
+                  <div
+                    class="flex justify-end border-b-2 border-white w-28 hoverable"
+                  >
+                    <a class="mr-2" href="#aboutme">Sobre Mi</a>
                   </div>
                 </div>
-              </div>
-              <div class="flex w-full justify-center">
-                <div class="w-1/3 flex justify-between" style="color: #e2e2e2">
-                  <a href="#"><i class="text-4xl bx bxl-github"></i></a>
-                  <a href="#"
-                    ><i class="text-4xl bx bxl-linkedin-square"></i
-                  ></a>
+                <div class="flex mb-4 ml-8">
+                  <div
+                    class="flex justify-end border-b-2 border-white w-28 hoverable"
+                  >
+                    <a class="mr-2" href="#experience">Experiencia</a>
+                  </div>
+                </div>
+                <div class="flex mb-4 ml-8">
+                  <div
+                    class="flex justify-end border-b-2 border-white w-28 hoverable"
+                  >
+                    <a class="mr-2" href="#proyects">Proyectos</a>
+                  </div>
+                </div>
+                <div class="flex mb-4 ml-8">
+                  <div
+                    class="flex justify-end border-b-2 border-white w-28 hoverable"
+                  >
+                    <a class="mr-2" href="#skills">Habilidades</a>
+                  </div>
+                </div>
+                <div class="flex mb-4 ml-8">
+                  <div
+                    class="flex justify-end border-b-2 border-white w-28 hoverable"
+                  >
+                    <a class="mr-2" href="#iue">Universidad</a>
+                  </div>
+                </div>
+                <div class="flex ml-8">
+                  <div
+                    class="flex justify-end border-b-2 border-white w-28 hoverable"
+                  >
+                    <a class="mr-2" href="#curriculum">Curriculo</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- gjhgjhgj -->
           </div>
-          <div class="w-full lg:w-2/3 md:overflow-y-auto flex justify-center">
-            <div
-              class="w-full lg:w-3/4 mt-5 px-4 lg:mt-20 text-xl"
-              style="color: #76777c"
-            >
-              <section id="aboutme">
-                <p class="ptitle">Sombre Mi</p>
-                <div class="hoverablebg">
-                  <p class="p-2">
-                    Back in 2012, I decided to try my hand at creating custom
-                    Tumblr themes and tumbled head first into the rabbit hole of
-                    coding and web development. Fast-forward to today, and I’ve
-                    had the privilege of building software for an advertising
-                    agency, a start-up, a student-led design studio, and a huge
-                    corporation. My main focus these days is building products
-                    and leading projects for our clients at Upstatement. In my
-                    free time I've also released an online video course that
-                    covers everything you need to know to build a web app with
-                    the Spotify API. When I’m not at the computer, I’m usually
-                    rock climbing, hanging out with my wife and two cats, or
-                    running around Hyrule searching for Korok seeds K o r o k s
-                    e e d s .
-                  </p>
-                </div>
-                <p class="ptitle mt-12" id="experience">Experiencia</p>
-                <div class="hoverablebg p-3 mb-10">
-                  <div class="lg:flex w-full lg:justify-center">
-                    <div class="lg:w-1/3 w-full">2023 - Presente</div>
-                    <div class="lg:w-2/3 w-full">
-                      <h2>Esta haciendo en el momento</h2>
-                      <p>
-                        Back in 2012, I decided to try my hand at creating
-                        custom Tumblr themes and tumbled head first into the
-                        rabbit hole of coding and
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex w-full justify-start mt-3 lg:justify-end">
-                    <div class="lg:w-2/3 flex justify-around flex-wrap w-full">
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        Javascript
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        HTML
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        CSS
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        Python
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        Java
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        C#
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-20 hoverablebg p-3 mb-10">
-                  <div class="lg:flex w-full lg:justify-center">
-                    <div class="lg:w-1/3 w-full">2023 - Presente</div>
-                    <div class="lg:w-2/3 w-full">
-                      <h2>Esta haciendo en el momento</h2>
-                      <p>
-                        Back in 2012, I decided to try my hand at creating
-                        custom Tumblr themes and tumbled head first into the
-                        rabbit hole of coding and
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex w-full justify-start mt-3 lg:justify-end">
-                    <div class="lg:w-2/3 flex justify-around flex-wrap w-full">
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        Javascript
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        HTML
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        CSS
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        Python
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        Java
-                      </div>
-                      <div
-                        class="rounded-md px-2 py-1 mb-2 mr-2"
-                        style="background-color: #0b1e27"
-                      >
-                        C#
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section id="proyects">
-                <p class="ptitle">Proyectos</p>
-                <div class="mt-20 hoverablebg p-3 mb-10">
-                  <div class="lg:flex w-full lg:justify-center">
-                    <div class="lg:w-1/3 w-full">
-                      <img class="w-4/5" src="./pictures/proyecto1.jpeg" />
-                    </div>
-                    <div class="lg:w-2/3 w-full">
-                      <h2>Un proyecto 1</h2>
-                      <p>
-                        Back in 2012, I decided to try my hand at creating
-                        custom Tumblr themes and tumbled head first into the
-                        rabbit hole of coding and
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-20 hoverablebg p-3 mb-10">
-                  <div class="lg:flex w-full lg:justify-center">
-                    <div class="lg:w-1/3 w-full">
-                      <img class="w-4/5" src="./pictures/proyecto3.jpeg" />
-                    </div>
-                    <div class="lg:w-2/3 w-full">
-                      <h2>Un proyecto 3</h2>
-                      <p>
-                        Back in 2012, I decided to try my hand at creating
-                        custom Tumblr themes and tumbled head first into the
-                        rabbit hole of coding and
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-20 hoverablebg p-3 mb-10">
-                  <div class="lg:flex w-full lg:justify-center">
-                    <div class="lg:w-1/3 w-full">
-                      <img class="w-4/5" src="./pictures/proyecto3.jpeg" />
-                    </div>
-                    <div class="lg:w-2/3 w-full">
-                      <h2>Un proyecto 3</h2>
-                      <p>
-                        Back in 2012, I decided to try my hand at creating
-                        custom Tumblr themes and tumbled head first into the
-                        rabbit hole of coding and
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-20 hoverablebg p-3 mb-10">
-                  <div class="lg:flex w-full lg:justify-center">
-                    <div class="lg:w-1/3 w-full">
-                      <img class="w-4/5" src="./pictures/proyecto4.jpeg" />
-                    </div>
-                    <div class="lg:w-2/3 w-full">
-                      <h2>Un proyecto 4</h2>
-                      <p>
-                        Back in 2012, I decided to try my hand at creating
-                        custom Tumblr themes and tumbled head first into the
-                        rabbit hole of coding and
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section id="skills">
-                <p class="ptitle">Habilidades</p>
-                <div class="skills flex justify-evenly">
-                  <div
-                    class="transform transition-transform hover:scale-125 hover:shadow-xl"
-                    style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
-                  >
-                    <a><i class="icons bx bxl-python"></i></a>
-                  </div>
-
-                  <div
-                    class="transform transition-transform hover:scale-125 hover:shadow-xl"
-                    style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
-                  >
-                    <a><i class="icons bx bxl-javascript"></i></a>
-                  </div>
-                  <div
-                    class="transform transition-transform hover:scale-125 hover:shadow-xl"
-                    style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
-                  >
-                    <a><i class="icons bx bxl-nodejs"></i></a>
-                  </div>
-                  <div
-                    class="transform transition-transform hover:scale-125 hover:shadow-xl"
-                    style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
-                  >
-                    <a><i class="icons bx bxl-tailwind-css"></i></a>
-                  </div>
-                  <div
-                    class="transform transition-transform hover:scale-125 hover:shadow-xl"
-                    style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
-                  >
-                    <a><i class="icons bx bxl-html5"></i></a>
-                  </div>
-                  <div
-                    class="transform transition-transform hover:scale-125 hover:shadow-xl"
-                    style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
-                  >
-                    <a><i class="icons bx bxl-postgresql"></i></a>
-                  </div>
-                  <div
-                    class="transform transition-transform hover:scale-125 hover:shadow-xl"
-                    style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
-                  >
-                    <a><i class="icons bx bxl-mongodb"></i></a>
-                  </div>
-                  <div
-                    class="transform transition-transform hover:scale-125 hover:shadow-xl"
-                    style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
-                  >
-                    <a><i class="icons bx bxl-react"></i></a>
-                  </div>
-                </div>
-              </section>
-              <section id="iue" class="mt-10">
-                <p class="ptitle">IUE</p>
-                <div class="lg:flex w-full lg:flex-wrap">
-                  <div class="w-full lg:w-1/2 text-center p-2">
-                    <div class="p-2 rounded-lg card">
-                      <h3
-                        class="font-bold text-3xl mb-2"
-                        style="color: #e2e2e2"
-                      >
-                        Diseño
-                      </h3>
-                      <ul>
-                        <a href="#"><li class="text-color">Diseño 1</li></a>
-                        <a href="#"><li class="text-color">Diseño 2</li></a>
-                        <a href="#"><li class="text-color">Diseño 3</li></a>
-                        <a href="#"><li class="text-color">Diseño 4</li></a>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="w-full lg:w-1/2 text-center p-2">
-                    <div class="p-2 rounded-lg card">
-                      <h3
-                        class="font-bold text-3xl mb-2"
-                        style="color: #e2e2e2"
-                      >
-                        Consultas
-                      </h3>
-                      <ul>
-                        <a href="./searches/protocols.html"
-                          ><li class="text-color">Protocolos</li></a
-                        >
-                        <a href="#"><li class="text-color">Consulta 2</li></a>
-                        <a href="#"><li class="text-color">Consulta 3</li></a>
-                        <a href="#"><li class="text-color">Consulta 4</li></a>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="w-full lg:w-1/2 text-center p-2">
-                    <div class="p-2 rounded-lg card">
-                      <h3
-                        class="font-bold text-3xl mb-2"
-                        style="color: #e2e2e2"
-                      >
-                        Talleres
-                      </h3>
-                      <ul>
-                        <a href="#"><li class="text-color">Taller 1</li></a>
-                        <a href="#"><li class="text-color">Taller 2</li></a>
-                        <a href="#"><li class="text-color">Taller 3</li></a>
-                        <a href="#"><li class="text-color">Taller 4</li></a>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="w-full lg:w-1/2 text-center p-2">
-                    <div class="p-2 rounded-lg card">
-                      <h3
-                        class="font-bold text-3xl mb-2"
-                        style="color: #e2e2e2"
-                      >
-                        Retos
-                      </h3>
-                      <ul>
-                        <a href="#"><li class="text-color">Reto 1</li></a>
-                        <a href="#"><li class="text-color">Reto 1</li></a>
-                        <a href="#"><li class="text-color">Reto 3</li></a>
-                        <a href="#"><li class="text-color">Reto 4</li></a>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section id="curriculum">
-                <div class="flex justify-center mt-5 pb-5">
-                  <h3 class="mr-3">Curriculum</h3>
-                  <p class="-mt-1 mr-3">👉</p>
-                  <a download href="./files/curriculo.pdf">Descargar</a>
-                </div>
-              </section>
+          <div class="flex justify-center w-full">
+            <div class="flex justify-between w-1/3" style="color: #e2e2e2">
+              <a href="#"><i class="text-4xl bx bxl-github"></i></a>
+              <a href="#"><i class="text-4xl bx bxl-linkedin-square"></i></a>
             </div>
           </div>
         </div>
-        <script src="./js.js/index.js"></script>
-      </body>
-    </html>
-  </head>
+        <!-- gjhgjhgj -->
+      </div>
+      <div class="flex justify-center w-full lg:w-2/3 md:overflow-y-auto">
+        <div
+          class="w-full px-4 mt-5 text-xl lg:w-3/4 lg:mt-20"
+          style="color: #76777c"
+        >
+          <section id="aboutme">
+            <p class="ptitle">Sombre Mi</p>
+            <div class="hoverablebg">
+              <p class="p-2">
+                "Soy un desarrollador web apasionado y estudiante de Ingeniería
+                Informática. Mi viaje comenzó con HTML, CSS y JavaScript, y
+                desde entonces, he estado creando experiencias en línea
+                cautivadoras y funcionales. <br />
+                <br />Siempre busco nuevas tecnologías y marcos de trabajo para
+                mantenerme actualizado en este campo en constante evolución.
+                Disfruto colaborando en equipos multidisciplinarios, comunicando
+                ideas y transformándolas en código sólido.<br />
+                <br />
+                Mi objetivo es crecer como desarrollador y contribuir en
+                proyectos impactantes en el mundo digital. Mi portafolio refleja
+                mi evolución hasta ahora, y espero con entusiasmo las
+                oportunidades futuras en el emocionante campo del desarrollo
+                web." <br />
+                <br />
+                Esta versión tiene aproximadamente la mitad de la longitud
+                original, pero aún transmite tus puntos clave y tu pasión por el
+                desarrollo web.
+              </p>
+            </div>
+            <p class="mt-12 ptitle" id="experience">Experiencia</p>
+            <div class="p-3 mb-10 hoverablebg">
+              <div class="w-full lg:flex lg:justify-center">
+                <div class="w-full lg:w-1/3">2023 - Presente</div>
+                <div class="w-full lg:w-2/3">
+                  <h2>Esta haciendo en el momento</h2>
+                  <p>
+                    Back in 2012, I decided to try my hand at creating custom
+                    Tumblr themes and tumbled head first into the rabbit hole of
+                    coding and
+                  </p>
+                </div>
+              </div>
+              <div class="flex justify-start w-full mt-3 lg:justify-end">
+                <div class="flex flex-wrap justify-around w-full lg:w-2/3">
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    Javascript
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    HTML
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    CSS
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    Python
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    Java
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    C#
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 mt-20 mb-10 hoverablebg">
+              <div class="w-full lg:flex lg:justify-center">
+                <div class="w-full lg:w-1/3">2023 - Presente</div>
+                <div class="w-full lg:w-2/3">
+                  <h2>Esta haciendo en el momento</h2>
+                  <p>
+                    Back in 2012, I decided to try my hand at creating custom
+                    Tumblr themes and tumbled head first into the rabbit hole of
+                    coding and
+                  </p>
+                </div>
+              </div>
+              <div class="flex justify-start w-full mt-3 lg:justify-end">
+                <div class="flex flex-wrap justify-around w-full lg:w-2/3">
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    Javascript
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    HTML
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    CSS
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    Python
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    Java
+                  </div>
+                  <div
+                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    style="background-color: #0b1e27"
+                  >
+                    C#
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="proyects">
+            <p class="ptitle">Proyectos</p>
+            <div class="p-3 mt-20 mb-10 hoverablebg">
+              <div class="w-full lg:flex lg:justify-center">
+                <div class="w-full lg:w-1/3">
+                  <img class="w-4/5" src="./pictures/proyecto1.jpeg" />
+                </div>
+                <div class="w-full lg:w-2/3">
+                  <h2>Un proyecto 1</h2>
+                  <p>
+                    Back in 2012, I decided to try my hand at creating custom
+                    Tumblr themes and tumbled head first into the rabbit hole of
+                    coding and
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 mt-20 mb-10 hoverablebg">
+              <div class="w-full lg:flex lg:justify-center">
+                <div class="w-full lg:w-1/3">
+                  <img class="w-4/5" src="./pictures/proyecto3.jpeg" />
+                </div>
+                <div class="w-full lg:w-2/3">
+                  <h2>Un proyecto 3</h2>
+                  <p>
+                    Back in 2012, I decided to try my hand at creating custom
+                    Tumblr themes and tumbled head first into the rabbit hole of
+                    coding and
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 mt-20 mb-10 hoverablebg">
+              <div class="w-full lg:flex lg:justify-center">
+                <div class="w-full lg:w-1/3">
+                  <img class="w-4/5" src="./pictures/proyecto3.jpeg" />
+                </div>
+                <div class="w-full lg:w-2/3">
+                  <h2>Un proyecto 3</h2>
+                  <p>
+                    Back in 2012, I decided to try my hand at creating custom
+                    Tumblr themes and tumbled head first into the rabbit hole of
+                    coding and
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-3 mt-20 mb-10 hoverablebg">
+              <div class="w-full lg:flex lg:justify-center">
+                <div class="w-full lg:w-1/3">
+                  <img class="w-4/5" src="./pictures/proyecto4.jpeg" />
+                </div>
+                <div class="w-full lg:w-2/3">
+                  <h2>Un proyecto 4</h2>
+                  <p>
+                    Back in 2012, I decided to try my hand at creating custom
+                    Tumblr themes and tumbled head first into the rabbit hole of
+                    coding and
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="skills">
+            <p class="ptitle">Habilidades</p>
+            <div class="flex skills justify-evenly">
+              <div
+                class="transition-transform transform hover:scale-125 hover:shadow-xl"
+                style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
+              >
+                <a><i class="icons bx bxl-python"></i></a>
+              </div>
+
+              <div
+                class="transition-transform transform hover:scale-125 hover:shadow-xl"
+                style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
+              >
+                <a><i class="icons bx bxl-javascript"></i></a>
+              </div>
+              <div
+                class="transition-transform transform hover:scale-125 hover:shadow-xl"
+                style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
+              >
+                <a><i class="icons bx bxl-nodejs"></i></a>
+              </div>
+              <div
+                class="transition-transform transform hover:scale-125 hover:shadow-xl"
+                style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
+              >
+                <a><i class="icons bx bxl-tailwind-css"></i></a>
+              </div>
+              <div
+                class="transition-transform transform hover:scale-125 hover:shadow-xl"
+                style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
+              >
+                <a><i class="icons bx bxl-html5"></i></a>
+              </div>
+              <div
+                class="transition-transform transform hover:scale-125 hover:shadow-xl"
+                style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
+              >
+                <a><i class="icons bx bxl-postgresql"></i></a>
+              </div>
+              <div
+                class="transition-transform transform hover:scale-125 hover:shadow-xl"
+                style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
+              >
+                <a><i class="icons bx bxl-mongodb"></i></a>
+              </div>
+              <div
+                class="transition-transform transform hover:scale-125 hover:shadow-xl"
+                style="box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1)"
+              >
+                <a><i class="icons bx bxl-react"></i></a>
+              </div>
+            </div>
+          </section>
+          <section id="iue" class="mt-10">
+            <p class="ptitle">IUE</p>
+            <div class="w-full lg:flex lg:flex-wrap">
+              <div class="w-full p-2 text-center lg:w-1/2">
+                <div class="p-2 rounded-lg card">
+                  <h3 class="mb-2 text-3xl font-bold" style="color: #e2e2e2">
+                    Diseño
+                  </h3>
+                  <ul>
+                    <a href="#"><li class="text-color">Diseño 1</li></a>
+                    <a href="#"><li class="text-color">Diseño 2</li></a>
+                    <a href="#"><li class="text-color">Diseño 3</li></a>
+                    <a href="#"><li class="text-color">Diseño 4</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="w-full p-2 text-center lg:w-1/2">
+                <div class="p-2 rounded-lg card">
+                  <h3 class="mb-2 text-3xl font-bold" style="color: #e2e2e2">
+                    Consultas
+                  </h3>
+                  <ul>
+                    <a href="./searches/protocols.html"
+                      ><li class="text-color">Protocolos</li></a
+                    >
+                    <a href="#"><li class="text-color">Consulta 2</li></a>
+                    <a href="#"><li class="text-color">Consulta 3</li></a>
+                    <a href="#"><li class="text-color">Consulta 4</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="w-full p-2 text-center lg:w-1/2">
+                <div class="p-2 rounded-lg card">
+                  <h3 class="mb-2 text-3xl font-bold" style="color: #e2e2e2">
+                    Talleres
+                  </h3>
+                  <ul>
+                    <a href="#"><li class="text-color">Taller 1</li></a>
+                    <a href="#"><li class="text-color">Taller 2</li></a>
+                    <a href="#"><li class="text-color">Taller 3</li></a>
+                    <a href="#"><li class="text-color">Taller 4</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="w-full p-2 text-center lg:w-1/2">
+                <div class="p-2 rounded-lg card">
+                  <h3 class="mb-2 text-3xl font-bold" style="color: #e2e2e2">
+                    Retos
+                  </h3>
+                  <ul>
+                    <a href="#"><li class="text-color">Reto 1</li></a>
+                    <a href="#"><li class="text-color">Reto 1</li></a>
+                    <a href="#"><li class="text-color">Reto 3</li></a>
+                    <a href="#"><li class="text-color">Reto 4</li></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="curriculum">
+            <div class="flex justify-center pb-5 mt-5">
+              <h3 class="mr-7">Curriculum</h3>
+              <p class="mr-7 -mt-1">👉</p>
+              <a
+                download
+                class="transition-transform transform hover:scale-125 hover:shadow-xl"
+                href="./files/curriculo.pdf"
+                >Descargar</a
+              >
+              <a href="#aboutme"
+                ><i
+                  class="transition-transform transform hover:scale-125 hover:shadow-xl ml-7 text-3xl bx bxs-up-arrow-circle block lg:hidden"
+                ></i
+              ></a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./js.js/index.js"></script>
+  </body>
 </html>
