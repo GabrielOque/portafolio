@@ -59,3 +59,22 @@ html {
   font-size: 1.5rem;
   transition: 0.3s;
 }
+
+@keyframes moveAndFlip {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+  50% {
+    transform: translateX(305px) scaleX(1);
+  }
+  51% {
+    transform: translateX(305px) scaleX(-1);
+  }
+  100% {
+    transform: translateX(0) scaleX(-1);
+  }
+}
+
+.animate-move-and-flip {
+  animation: moveAndFlip 10s linear infinite;
+}

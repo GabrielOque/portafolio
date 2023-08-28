@@ -23,13 +23,69 @@
   <body>
     <div class="h-full lg:h-screen lg:flex" style="background-color: #112a38">
       <div
-        class="flex flex-col justify-center w-full px-4 pt-10 lg:w-1/3 md:mt-0"
+        class="flex flex-col justify-center w-full px-4 pt-10 lg:w-1/3 md:mt-0 relative"
       >
-        <!-- <div class="flex justify-center w-full pt-20">
-              <div class="w-40 h-40 bg-blue-900 rounded-full lg:w-64 lg:h-64">
-                <img class="rounded-full" src="./pictures/profile.jpeg" />
+        <div
+          id="nav-button-open"
+          class="absolute top-0 right-0 block lg:hidden"
+        >
+          <button class="pr-3" id="open">
+            <i class="text-4xl text-white bx bx-menu"></i>
+          </button>
+        </div>
+        <div
+          id="nav-button-close"
+          class="absolute top-0 right-0 hidden w-full flex justify-between pb-5"
+          style="background-color: #34495e"
+        >
+          <div class="text-2xl font-bold ml-5" style="color: #aed6f1">
+            <h3>Menu</h3>
+          </div>
+          <button class="pr-3" id="close">
+            <i class="text-4xl text-white bx bx-x"></i>
+          </button>
+        </div>
+        <div
+          id="nav"
+          class="absolute top-5 left-0 hidden font-bold text-xl w-full h-96 mt-10"
+          style="background-color: #34495e; color: #aed6f1"
+        >
+          <div class="flex flex-col ml-5 h-full justify-start">
+            <div class="border-b border-white pb-2 flex mb-3">
+              <i class="text-2xl mr-2 pt-1 text-white bx bxs-user"></i>
+              <a href="#aboutme" id="sobremi">Sobre Mi</a>
+            </div>
+            <div class="border-b border-white pb-2 flex mb-3">
+              <i class="text-2xl mr-2 pt-1 text-white bx bx-laptop"></i>
+              <a href="#experience" id="expe">Experiencia</a>
+            </div>
+            <div class="border-b border-white pb-2 flex mb-3">
+              <i class="text-2xl mr-2 pt-1 text-white bx bxs-briefcase-alt"></i>
+              <a href="#proyects" id="proy">Proyectos</a>
+            </div>
+            <div class="border-b border-white pb-2 flex mb-3">
+              <i class="text-2xl mr-2 pt-1 text-white bx bx-code-curly"></i>
+              <a href="#skills" id="hab">Habilidades</a>
+            </div>
+            <div class="border-b border-white pb-2 flex mb-3">
+              <i class="text-2xl mr-2 pt-1 text-white bx bxs-school"></i>
+              <a href="#iue" id="uni">Universidad</a>
+            </div>
+            <div class="border-b border-white pb-2 flex mb-3">
+              <i
+                class="text-2xl mr-2 pt-1 text-white bx bxs-cloud-download"
+              ></i>
+              <a href="#curriculum" id="curr">Curriculo</a>
+            </div>
+            <div class="relative">
+              <div
+                class="absolute top-5 left-0 transform -translate-y-1/2 animate-move-and-flip"
+              >
+                <i class="te text-2xl mr-2 pt-1 text-white bx bxs-cat"></i>
               </div>
-            </div> -->
+            </div>
+          </div>
+        </div>
         <div class="flex flex-col items-center h-screen justify-evenly">
           <div class="flex flex-col items-center justify-between">
             <h1
@@ -53,7 +109,7 @@
               class="flex flex-col items-center justify-around w-full mt-10 text-xl"
               style="color: #76777c"
             >
-              <div class="w-1/2 flex flex-col items-start">
+              <div class="w-1/2 flex flex-col items-start hidden lg:block">
                 <div class="flex mb-4 ml-8">
                   <div
                     class="flex justify-end border-b-2 border-white w-28 hoverable"
@@ -101,7 +157,9 @@
           </div>
           <div class="flex justify-center w-full">
             <div class="flex justify-between w-1/3" style="color: #e2e2e2">
-              <a href="#"><i class="text-4xl bx bxl-github"></i></a>
+              <a href="https://github.com/GabrielOque"
+                ><i class="text-4xl bx bxl-github"></i
+              ></a>
               <a href="#"><i class="text-4xl bx bxl-linkedin-square"></i></a>
             </div>
           </div>
@@ -114,27 +172,17 @@
           style="color: #76777c"
         >
           <section id="aboutme">
-            <p class="ptitle">Sombre Mi</p>
+            <p class="ptitle">Sobre Mi</p>
             <div class="hoverablebg">
               <p class="p-2">
-                "Soy un desarrollador web apasionado y estudiante de Ingeniería
-                Informática. Mi viaje comenzó con HTML, CSS y JavaScript, y
-                desde entonces, he estado creando experiencias en línea
-                cautivadoras y funcionales. <br />
-                <br />Siempre busco nuevas tecnologías y marcos de trabajo para
-                mantenerme actualizado en este campo en constante evolución.
-                Disfruto colaborando en equipos multidisciplinarios, comunicando
-                ideas y transformándolas en código sólido.<br />
-                <br />
-                Mi objetivo es crecer como desarrollador y contribuir en
-                proyectos impactantes en el mundo digital. Mi portafolio refleja
-                mi evolución hasta ahora, y espero con entusiasmo las
-                oportunidades futuras en el emocionante campo del desarrollo
-                web." <br />
-                <br />
-                Esta versión tiene aproximadamente la mitad de la longitud
-                original, pero aún transmite tus puntos clave y tu pasión por el
-                desarrollo web.
+                Soy un apasionado desarrollador web y estudiante de Ingeniería
+                Informática, con experiencia en HTML, CSS y JavaScript. Siempre
+                persigo nuevas tecnologías para crear experiencias en línea
+                cautivadoras. Colaborar en equipos multidisciplinarios y
+                convertir ideas en código sólido es mi enfoque. Aspiro a crecer
+                y contribuir en proyectos impactantes en el mundo digital, como
+                refleja mi evolución en mi portafolio. Emocionado por futuras
+                oportunidades en este campo en constante evolución.
               </p>
             </div>
             <p class="mt-12 ptitle" id="experience">Experiencia</p>
@@ -142,104 +190,111 @@
               <div class="w-full lg:flex lg:justify-center">
                 <div class="w-full lg:w-1/3">2023 - Presente</div>
                 <div class="w-full lg:w-2/3">
-                  <h2>Esta haciendo en el momento</h2>
+                  <h2 class="mb-4">Actualmente</h2>
                   <p>
-                    Back in 2012, I decided to try my hand at creating custom
-                    Tumblr themes and tumbled head first into the rabbit hole of
-                    coding and
+                    Actualmente, me encuentro desarrollando en Python en un
+                    proyecto de investigación de la universidad. También dedico
+                    tiempo a realizar proyectos personales utilizando JavaScript
+                    con React.js.
                   </p>
                 </div>
               </div>
               <div class="flex justify-start w-full mt-3 lg:justify-end">
                 <div class="flex flex-wrap justify-around w-full lg:w-2/3">
                   <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
                     style="background-color: #0b1e27"
                   >
-                    Javascript
+                    JavaScript
                   </div>
                   <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
+                    style="background-color: #0b1e27"
+                  >
+                    React.js
+                  </div>
+                  <div
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
+                    style="background-color: #0b1e27"
+                  >
+                    Node.js
+                  </div>
+                  <div
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
+                    style="background-color: #0b1e27"
+                  >
+                    MongoDB
+                  </div>
+                  <div
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
                     style="background-color: #0b1e27"
                   >
                     HTML
                   </div>
                   <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
                     style="background-color: #0b1e27"
                   >
                     CSS
                   </div>
                   <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
                     style="background-color: #0b1e27"
                   >
                     Python
-                  </div>
-                  <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
-                    style="background-color: #0b1e27"
-                  >
-                    Java
-                  </div>
-                  <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
-                    style="background-color: #0b1e27"
-                  >
-                    C#
                   </div>
                 </div>
               </div>
             </div>
             <div class="p-3 mt-20 mb-10 hoverablebg">
               <div class="w-full lg:flex lg:justify-center">
-                <div class="w-full lg:w-1/3">2023 - Presente</div>
+                <div class="w-full lg:w-1/3">2022 - 2023</div>
                 <div class="w-full lg:w-2/3">
-                  <h2>Esta haciendo en el momento</h2>
+                  <h2 class="mb-4">Desarrollador OPALYTICA</h2>
                   <p>
-                    Back in 2012, I decided to try my hand at creating custom
-                    Tumblr themes and tumbled head first into the rabbit hole of
-                    coding and
+                    Anteriormente, trabajé en la startup llamada "Opalytica",
+                    donde tuve la oportunidad de trabajar con tecnologías
+                    punteras. Utilizamos JavaScript con React para construir
+                    interfaces dinámicas y atractivas, junto con Tailwind para
+                    agilizar el diseño. Además, trabajamos con Node.js y Python
+                    para desarrollar soluciones sólidas y eficientes. Esta
+                    experiencia me permitió contribuir en proyectos que fusionan
+                    tecnologías innovadoras y desarrollar habilidades valiosas
+                    en un entorno profesional dinámico.
                   </p>
                 </div>
               </div>
               <div class="flex justify-start w-full mt-3 lg:justify-end">
                 <div class="flex flex-wrap justify-around w-full lg:w-2/3">
                   <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
                     style="background-color: #0b1e27"
                   >
-                    Javascript
+                    JavaScript
                   </div>
                   <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
                     style="background-color: #0b1e27"
                   >
-                    HTML
+                    React.js
                   </div>
                   <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
                     style="background-color: #0b1e27"
                   >
-                    CSS
+                    Tailwind css
                   </div>
                   <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
                     style="background-color: #0b1e27"
                   >
                     Python
                   </div>
                   <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
+                    class="px-5 pt-1 pb-2 mb-2 mr-2 rounded-md text-white"
                     style="background-color: #0b1e27"
                   >
-                    Java
-                  </div>
-                  <div
-                    class="px-2 py-1 mb-2 mr-2 rounded-md"
-                    style="background-color: #0b1e27"
-                  >
-                    C#
+                    Node.js
                   </div>
                 </div>
               </div>
@@ -247,62 +302,110 @@
           </section>
           <section id="proyects">
             <p class="ptitle">Proyectos</p>
-            <div class="p-3 mt-20 mb-10 hoverablebg">
+            <div
+              class="p-3 mt-20 mb-10 hoverablebg"
+              onclick="window.location.href = 'https://www.opalytica.com/';"
+            >
               <div class="w-full lg:flex lg:justify-center">
                 <div class="w-full lg:w-1/3">
-                  <img class="w-4/5" src="./pictures/proyecto1.jpeg" />
+                  <img class="w-4/5" src="./pictures/landing.opalytica.png" />
                 </div>
                 <div class="w-full lg:w-2/3">
-                  <h2>Un proyecto 1</h2>
+                  <h2 class="mb-4 mt-4 lg:mt-0">Landing Page OPALYTICA</h2>
                   <p>
-                    Back in 2012, I decided to try my hand at creating custom
-                    Tumblr themes and tumbled head first into the rabbit hole of
-                    coding and
+                    En Opalytica, lideré la creación de la página de inicio
+                    usando Tailwind CSS y JavaScript. Utilicé Tailwind para un
+                    diseño eficiente y añadí interacciones dinámicas con
+                    JavaScript. Esto me dio experiencia en combinar tecnologías
+                    modernas para una página web atractiva y funcional.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="p-3 mt-20 mb-10 hoverablebg">
+            <div
+              class="p-3 mt-20 mb-10 hoverablebg"
+              onclick="window.location.href = 'https://oquendodev.neocities.org/';"
+            >
               <div class="w-full lg:flex lg:justify-center">
                 <div class="w-full lg:w-1/3">
-                  <img class="w-4/5" src="./pictures/proyecto3.jpeg" />
+                  <img class="w-4/5" src="./pictures/portafolio.png" />
                 </div>
                 <div class="w-full lg:w-2/3">
-                  <h2>Un proyecto 3</h2>
+                  <h2 class="mb-4 mt-4 lg:mt-0">Portafolio personal</h2>
                   <p>
-                    Back in 2012, I decided to try my hand at creating custom
-                    Tumblr themes and tumbled head first into the rabbit hole of
-                    coding and
+                    Desarrollé mi portafolio personal utilizando HTML y Tailwind
+                    CSS. Esta elección me permitió crear un sitio con un diseño
+                    eficiente y moderno, destacando mis proyectos de manera
+                    efectiva.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="p-3 mt-20 mb-10 hoverablebg">
+            <div
+              class="p-3 mt-20 mb-10 hoverablebg"
+              onclick="window.location.href = 'https://app.jikko.online/';"
+            >
               <div class="w-full lg:flex lg:justify-center">
                 <div class="w-full lg:w-1/3">
-                  <img class="w-4/5" src="./pictures/proyecto3.jpeg" />
+                  <img class="w-4/5" src="./pictures/login-jikko.png" />
                 </div>
                 <div class="w-full lg:w-2/3">
-                  <h2>Un proyecto 3</h2>
+                  <h2 class="mb-4 mt-4 lg:mt-0">Login JIKKO</h2>
                   <p>
-                    Back in 2012, I decided to try my hand at creating custom
-                    Tumblr themes and tumbled head first into the rabbit hole of
-                    coding and
+                    Desarrollé las funcionalidades de inicio de sesión y
+                    recuperación de contraseña en el software Jikko de
+                    Opalytica. Usé React, Tailwind CSS y Redux en el frontend,
+                    junto con Node.js y Django en el backend. Esto demostró mi
+                    capacidad para crear soluciones completas y eficientes en un
+                    entorno dinámico.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="p-3 mt-20 mb-10 hoverablebg">
+            <div
+              class="p-3 mt-20 mb-10 hoverablebg"
+              onclick="window.location.href = 'https://oquendodev.neocities.org/challenge-sports/';"
+            >
               <div class="w-full lg:flex lg:justify-center">
                 <div class="w-full lg:w-1/3">
-                  <img class="w-4/5" src="./pictures/proyecto4.jpeg" />
+                  <img class="w-4/5" src="./pictures/landig-escursiones.png" />
                 </div>
                 <div class="w-full lg:w-2/3">
-                  <h2>Un proyecto 4</h2>
+                  <h2 class="mb-4 mt-4 lg:mt-0">Landing Page Excursiones</h2>
                   <p>
-                    Back in 2012, I decided to try my hand at creating custom
-                    Tumblr themes and tumbled head first into the rabbit hole of
-                    coding and
+                    Diseñé una página de aterrizaje para viajes y deportes
+                    extremos, resaltando actividades como deportes extremos,
+                    caminatas y aventuras. Usé JavaScript, HTML y Tailwind CSS
+                    para crear un diseño atractivo y dinámico, que muestra las
+                    emocionantes oportunidades de esta experiencia única.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="p-3 mt-20 mb-10 hoverablebg"
+              onclick="window.location.href = 'https://github.com/GabrielOque/Hotel_POO';"
+            >
+              <div class="w-full lg:flex lg:justify-center">
+                <div class="w-full lg:w-1/3">
+                  <img
+                    class="w-4/5"
+                    src="./pictures/hotel-billing-system.png"
+                  />
+                </div>
+                <div class="w-full lg:w-2/3">
+                  <h2 class="mb-4 mt-4 lg:mt-0">Sistema de facturación</h2>
+                  <p>
+                    Desarrollé y desplegué una aplicación de escritorio
+                    utilizando tecnologías .NET y C#. La aplicación está
+                    respaldada por una base de datos SQL y se diseñó
+                    específicamente para optimizar la gestión de facturación
+                    interna de un hotel. Además, proporciona a los clientes la
+                    capacidad de reservar directamente a través del sistema.
+                    Esta solución integral mejora la eficiencia operativa del
+                    hotel al tiempo que ofrece a los clientes una forma
+                    conveniente de acceder a los servicios del hotel y realizar
+                    reservas en línea.
                   </p>
                 </div>
               </div>
@@ -412,7 +515,9 @@
                     Retos
                   </h3>
                   <ul>
-                    <a href="#"><li class="text-color">Reto 1</li></a>
+                    <a href="./challenge-sports/index.html"
+                      ><li class="text-color">Deportes extremos</li></a
+                    >
                     <a href="#"><li class="text-color">Reto 1</li></a>
                     <a href="#"><li class="text-color">Reto 3</li></a>
                     <a href="#"><li class="text-color">Reto 4</li></a>
